@@ -76,7 +76,7 @@
 calculated for you automatically. You can’t change an employee’s readiness directly. You change the underlying
 information instead.</p>
 <aside aria-label="No employee is “Ready” yet" class="starlight-aside starlight-aside--caution"><p class="starlight-aside__title" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="starlight-aside__icon"><path d="M12 16a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm10.67 1.47-8.05-14a3 3 0 0 0-5.24 0l-8 14A3 3 0 0 0 3.94 22h16.12a3 3 0 0 0 2.61-4.53Zm-1.73 2a1 1 0 0 1-.88.51H3.94a1 1 0 0 1-.88-.51 1 1 0 0 1 0-1l8-14a1 1 0 0 1 1.78 0l8.05 14a1 1 0 0 1 .05 1.02v-.02ZM12 8a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"/></svg>No employee is “Ready” yet</p><div class="starlight-aside__content"><p>Some payroll requirements can’t be entered in Escochex Payroll yet, such as Social Security number, date of birth,
-home address, department, job title, primary work location, and tax setup. (Pay type and pay rate can be
+home address, department, job title, and primary work location. (Pay type and pay rate can be
 entered: open the employee, choose Employee Setup, then Payroll Details, and add a primary pay rate. The pay method can be set under
 Employee Setup, Pay Method and Bank Details. Check is the only pay method available for now.) Until they can, employees stay <strong>Blocked</strong> for live payroll, even when everything you <em>can</em> enter is
 complete.</p></div></aside>
@@ -117,6 +117,10 @@ role can’t view it.</p>
 <li><strong>Setup progress</strong> shows how many supported items are complete. Progress is <strong>not</strong> the same as readiness. Items
 that can’t be completed in Escochex Payroll yet aren’t counted in progress, and some items shown as missing, such
 as date of birth, department, and job title, can’t be completed from the app yet. Pay type and pay rate are completed under Payroll Details by adding a primary pay rate.</li>
+<li><strong>Employee tax setup</strong> is checked from the employee’s federal W-4 and state withholding election. It shows as
+missing until they are entered and in effect. It also stays in <strong>Action needed</strong> when a payroll administrator must
+review the setup first, for example a pending state election or an employee who lives and works in different states.
+If it couldn’t be checked, it shows as couldn’t be verified; select <strong>Try again</strong> later.</li>
 <li><strong>Action needed:</strong> items that are missing or couldn’t be verified.</li>
 <li><strong>Not yet supported:</strong> requirements that the product can’t capture yet. Each shows “Not yet supported — blocks live
 payroll.” You can’t complete these today.</li>
