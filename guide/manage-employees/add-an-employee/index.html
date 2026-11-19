@@ -230,23 +230,35 @@ shows what to fix, and keeps what you typed. A section with nothing to save, suc
 instead. Sections that add or end records, such as pay rates, benefits, or a reciprocity review, keep their own buttons.</p></div></aside>
 <div class="sl-heading-wrapper level-h2"><h2 id="benefits-and-deductions">Benefits and deductions</h2><a class="sl-anchor-link" href="#benefits-and-deductions"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Benefits and deductions”</span></a></div>
 <p>Open the employee, then <strong>4. Additional Settings</strong>. <strong>Benefits / Deductions</strong> is the first tab. The table lists what the
-employee has now: <strong>Type</strong>, <strong>Title</strong>, <strong>Time Period</strong>, <strong>Amount</strong> and <strong>Action</strong>.</p>
+employee has now: <strong>Type</strong>, <strong>Name</strong>, <strong>Category</strong>, <strong>Tax Treatment</strong>, <strong>Employee Contribution</strong>, <strong>Employer Contribution</strong>,
+<strong>Calculation</strong>, <strong>Frequency</strong>, <strong>Effective Date</strong>, <strong>Status</strong> and <strong>Action</strong>.</p>
 <ul>
-<li>Select <strong>+ Add Benefit / Deduction</strong>, choose a <strong>Benefit / Deduction Type</strong> from the list your company has set up, and
-enter the <strong>Employee Contribution</strong>. A <strong>Title</strong> and a <strong>Company Contribution</strong> are optional. The <strong>Pay Type</strong> (a flat
-amount or a percentage) comes from the type, and the amount is checked to match it. <strong>Time Period</strong> is not available
-yet. <strong>Save</strong> stays unavailable until the form is complete.</li>
+<li>Select <strong>+ Add Benefit / Deduction</strong>. There is one field, <strong>Benefit / Deduction Type</strong>, and no separate Benefit or
+Deduction switch. Its list holds both, and every row is marked <strong>Benefit</strong> or <strong>Deduction</strong> in words, so two rows with the
+same name are easy to tell apart. The row you choose decides which it is.</li>
+<li>After you choose a row, the form asks for what is needed first: the contribution fields, the <strong>Coverage Level</strong> for a plan
+that has levels, and the <strong>Effective Date</strong>. <strong>Title</strong>, <strong>End Date</strong> and <strong>Employee Annual Limit</strong> are under <strong>More options
+(title, end date, annual limit)</strong>, which is closed until you open it. It opens by itself when one of those fields has a value
+or a message, and when you edit a row that has them. <strong>Save</strong> stays unavailable until the form is complete.</li>
+<li>The list opens with a short <strong>Commonly used</strong> group first: 401(k), 403(b), 457(b), Roth 401(k), Roth 403(b), Health FSA, HSA and
+Dependent Care FSA, plus SIMPLE IRA under <strong>Box 13 Retirement Plan</strong>. Everything else follows under <strong>All other benefits and
+deductions</strong>, grouped by category. An item that cannot be assigned yet is shown greyed out with the reason. To find anything,
+type in the box: it filters at once across every benefit and deduction, and old and full names work too, so <strong>401k</strong>, <strong>fsa</strong>
+or <strong>dependent care</strong> all find what you expect. Short names are for finding things only; they do not change how a type is
+treated.</li>
 <li>If your company has not set up the type you need, the list also shows a <strong>Starter list</strong> of common benefits and
-deductions. Choose one to add it to your company without leaving the page. A starter deduction is saved awaiting tax
-review and cannot be assigned to an employee until its tax profile is approved.</li>
-<li>To use a type that is not in the list, choose <strong>+ Add Custom Benefit / Deduction</strong>. Enter a <strong>Title</strong>, choose
-<strong>Pre-Tax</strong> or <strong>Post-Tax</strong> and the <strong>Pay Type</strong>, and select the <strong>Tax Withholding Exemptions</strong> that apply. The new type
-is saved for your company and is offered for other employees, but Payroll has to review it before it is used. Until
-then the row is marked <strong>Requires payroll setup</strong>.</li>
+deductions, and a starter type can also appear under <strong>Commonly used</strong>. Choose one to add it to your company without leaving the
+page. A starter deduction is saved awaiting tax review and cannot be assigned to an employee until its tax profile is approved.</li>
+<li><strong>Not in the list? Add Custom Benefit / Deduction</strong> is always shown at the bottom of the open list, also when nothing
+matches. Choose it, then answer <strong>What are you adding?</strong> with <strong>Benefit</strong> or <strong>Deduction</strong>. The same form that
+People &gt; Benefits and Deductions uses opens over the page, so nothing you entered is lost, and anything you had typed in the
+list starts its <strong>Name</strong>. Choose <strong>Pre-tax</strong> or <strong>Post-tax</strong> and, for Pre-tax, choose <strong>Exempt</strong> or <strong>Taxable</strong> for each tax under <strong>Tax exemptions</strong>.
+The new type is saved for your company and selected here. A new deduction has to be reviewed before it can be assigned, and the
+form says so. If you do not have permission to add company benefits or deductions, a note asks you to ask an administrator.</li>
 <li>To change one, select <strong>Edit</strong> on its row, change the values, and select <strong>Save</strong>. You are asked to confirm, and the
 change takes effect on the date you choose. The earlier version stays on record. <strong>Discard</strong> asks you to confirm
 before it throws away your changes.</li>
-<li>To remove one, select <strong>Delete</strong> on its row and confirm. It stops applying going forward. Other employees and earlier
+<li>To remove one, select <strong>Deactivate</strong> on its row and confirm. It stops applying going forward. Other employees and earlier
 payroll are not changed.</li>
 </ul>
 <p>Benefit plans are listed separately under <strong>Benefit plan elections</strong> below the table. Adding, changing and removing
