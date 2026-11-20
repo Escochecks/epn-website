@@ -233,33 +233,83 @@ instead. Sections that add or end records, such as pay rates, benefits, or a rec
 employee has now: <strong>Type</strong>, <strong>Name</strong>, <strong>Category</strong>, <strong>Tax Treatment</strong>, <strong>Employee Contribution</strong>, <strong>Employer Contribution</strong>,
 <strong>Calculation</strong>, <strong>Frequency</strong>, <strong>Effective Date</strong>, <strong>Status</strong> and <strong>Action</strong>.</p>
 <ul>
-<li>Select <strong>+ Add Benefit / Deduction</strong>. There is one field, <strong>Benefit / Deduction Type</strong>, and no separate Benefit or
-Deduction switch. Its list holds both, and every row is marked <strong>Benefit</strong> or <strong>Deduction</strong> in words, so two rows with the
-same name are easy to tell apart. The row you choose decides which it is.</li>
-<li>After you choose a row, the form asks for what is needed first: the contribution fields, the <strong>Coverage Level</strong> for a plan
+<li>
+<p>Select <strong>+ Add Benefit / Deduction</strong>. There is one field, <strong>Benefit / Deduction Type</strong>, and no separate Benefit or
+Deduction switch. Its list has <strong>one row for each plan</strong>, and every row carries a label in words. The row you choose
+decides what is recorded. The small <strong>i</strong> next to the field name explains the labels, and it works with the keyboard too.</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>What it means</th>
+<th>What choosing it records</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Deduction + Employer contribution</strong></td>
+<td>The employee’s payroll deduction and the employer’s contribution are set together.</td>
+<td>One deduction, with an <strong>Employee Contribution</strong> and an <strong>Employer Contribution</strong>.</td>
+</tr>
+<tr>
+<td><strong>Benefit only</strong></td>
+<td>The employer’s contribution only. Nothing is taken from the employee’s pay.</td>
+<td>One benefit enrollment. There is no <strong>Employee Contribution</strong> field.</td>
+</tr>
+<tr>
+<td><strong>Deduction only</strong></td>
+<td>Taken from the employee’s pay. The employer’s contribution is not part of this.</td>
+<td>One deduction. There is no <strong>Employer Contribution</strong> field, and the form repeats the note at the top.</td>
+</tr>
+<tr>
+<td><strong>Benefit + Employee contribution</strong></td>
+<td>A benefit the employee also pays toward. The employee’s contribution is set when you enroll the employee.</td>
+<td>One benefit enrollment, with the contribution fields the plan allows.</td>
+</tr>
+</tbody>
+</table>
+<p>A plan that has both a benefit part and a deduction part, such as a 401(k), is one <strong>Deduction + Employer contribution</strong>
+row, not two. Choosing it records the deduction only, so nothing is taken twice. If that part cannot be assigned yet,
+the row is greyed out and the reason starts with <strong>Deduction:</strong>. If the employee is already enrolled in that plan as a
+benefit, the form tells you it is already assigned.</p>
+</li>
+<li>
+<p>After you choose a row, the form asks for what is needed first: the contribution fields, the <strong>Coverage Level</strong> for a plan
 that has levels, and the <strong>Effective Date</strong>. <strong>Title</strong>, <strong>End Date</strong> and <strong>Employee Annual Limit</strong> are under <strong>More options
 (title, end date, annual limit)</strong>, which is closed until you open it. It opens by itself when one of those fields has a value
-or a message, and when you edit a row that has them. <strong>Save</strong> stays unavailable until the form is complete.</li>
-<li>The list opens with a short <strong>Commonly used</strong> group first: 401(k), 403(b), 457(b), Roth 401(k), Roth 403(b), Health FSA, HSA and
+or a message, and when you edit a row that has them. <strong>Save</strong> stays unavailable until the form is complete.</p>
+</li>
+<li>
+<p>The list opens with a short <strong>Commonly used</strong> group first: 401(k), 403(b), 457(b), Roth 401(k), Roth 403(b), Health FSA, HSA and
 Dependent Care FSA, plus SIMPLE IRA under <strong>Box 13 Retirement Plan</strong>. Everything else follows under <strong>All other benefits and
 deductions</strong>, grouped by category. An item that cannot be assigned yet is shown greyed out with the reason. To find anything,
 type in the box: it filters at once across every benefit and deduction, and old and full names work too, so <strong>401k</strong>, <strong>fsa</strong>
-or <strong>dependent care</strong> all find what you expect. Short names are for finding things only; they do not change how a type is
-treated.</li>
-<li>If your company has not set up the type you need, the list also shows a <strong>Starter list</strong> of common benefits and
+or <strong>dependent care</strong> all find what you expect, and the label words work as well, such as <strong>deduction only</strong> or
+<strong>employer contribution</strong>. Short names are for finding things only; they do not change how a type is
+treated.</p>
+</li>
+<li>
+<p>If your company has not set up the type you need, the list also shows a <strong>Starter list</strong> of common benefits and
 deductions, and a starter type can also appear under <strong>Commonly used</strong>. Choose one to add it to your company without leaving the
-page. A starter deduction is saved awaiting tax review and cannot be assigned to an employee until its tax profile is approved.</li>
-<li><strong>Not in the list? Add Custom Benefit / Deduction</strong> is always shown at the bottom of the open list, also when nothing
+page. A starter deduction is saved awaiting tax review and cannot be assigned to an employee until its tax profile is approved.</p>
+</li>
+<li>
+<p><strong>Not in the list? Add Custom Benefit / Deduction</strong> is always shown at the bottom of the open list, also when nothing
 matches. Choose it, then answer <strong>What are you adding?</strong> with <strong>Benefit</strong> or <strong>Deduction</strong>. The same form that
 People &gt; Benefits and Deductions uses opens over the page, so nothing you entered is lost, and anything you had typed in the
 list starts its <strong>Name</strong>. Choose <strong>Pre-tax</strong> or <strong>Post-tax</strong> and, for Pre-tax, choose <strong>Exempt</strong> or <strong>Taxable</strong> for each tax under <strong>Tax exemptions</strong>.
 The new type is saved for your company and selected here. A new deduction has to be reviewed before it can be assigned, and the
-form says so. If you do not have permission to add company benefits or deductions, a note asks you to ask an administrator.</li>
-<li>To change one, select <strong>Edit</strong> on its row, change the values, and select <strong>Save</strong>. You are asked to confirm, and the
+form says so. If you do not have permission to add company benefits or deductions, a note asks you to ask an administrator.</p>
+</li>
+<li>
+<p>To change one, select <strong>Edit</strong> on its row, change the values, and select <strong>Save</strong>. You are asked to confirm, and the
 change takes effect on the date you choose. The earlier version stays on record. <strong>Discard</strong> asks you to confirm
-before it throws away your changes.</li>
-<li>To remove one, select <strong>Deactivate</strong> on its row and confirm. It stops applying going forward. Other employees and earlier
-payroll are not changed.</li>
+before it throws away your changes.</p>
+</li>
+<li>
+<p>To remove one, select <strong>Deactivate</strong> on its row and confirm. It stops applying going forward. Other employees and earlier
+payroll are not changed.</p>
+</li>
 </ul>
 <p>Benefit plans are listed separately under <strong>Benefit plan elections</strong> below the table. Adding, changing and removing
 these needs permission to manage employee deductions.</p>
